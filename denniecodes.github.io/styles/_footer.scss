@@ -1,0 +1,87 @@
+@import './mixins';
+@import './theme';
+
+footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 1.5rem 0 0;
+	padding-top: 2rem;
+	position: relative;
+	background-color: $light-grey;
+
+	@include tablet-portrait {
+		padding: 2.5rem 3rem 0 3rem;
+	}
+
+	@include desktop-small {
+		padding: 2.5rem 3rem 0 3rem;
+	}
+
+	@include desktop {
+		padding: 2.5rem 6.5rem 0 6.5rem;
+	}
+
+	.brand {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// flex-basis: 50%;
+
+		img {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+
+	.site-links {
+		margin-top: 0;
+		flex-basis: 25%;
+
+		p {
+			width: 20ch;
+			margin-top: 0;
+			font-weight: 500;
+			border-bottom: 1px solid $text-color--main;
+		}
+
+		li {
+			height: 1.5rem;
+
+			a {
+				color: $text-color--main;
+
+				&:hover {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	.footer-social {
+		position: absolute;
+		left: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		p {
+			// width: 18ch;
+			margin: 0;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			gap: 0.75rem;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+		}
+
+		&-icon {
+			width: 2rem;
+		}
+	}
+}

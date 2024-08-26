@@ -1,0 +1,104 @@
+@import "./mixins";
+@import "./theme";
+
+.skillset {
+  background-color: $light-grey;
+
+  h2 {
+    @include tablet-landscape {
+      margin: 1em 0 1.25em;
+    }
+  }
+
+  &-directory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2.5rem;
+
+    @include mobile-expand {
+      gap: 1rem;
+    }
+
+    @include mobile-landscape {
+      gap: 1.75rem;
+    }
+
+    @include tablet-landscape {
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+
+    @include desktop {
+      row-gap: 4rem;
+    }
+
+    h3 {
+      width: 100%;
+      font-size: 1.75rem;
+      height: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &-directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-subgroup {
+    flex: 1;
+    background-color: $off-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    border-radius: 10px;
+    padding: 2.5em 2em;
+
+    h3 {
+      @include desktop-small {
+        margin-bottom: 1.5em;
+      }
+    }
+
+    @include desktop-small {
+      padding: 2.5em 5em;
+      gap: 1.25em;
+      max-width: 800px;
+    }
+  }
+
+  &-card {
+    flex-basis: 6rem;
+    text-align: center;
+
+    & img {
+      height: 5rem;
+      width: 5rem;
+      object-fit: contain;
+    }
+
+    // Padding and dark background for white colored logos
+    .dark-bg {
+      padding: 0.25rem;
+      background-color: $bg-color--second;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+      // width: 5rem;
+      font-size: 0.9rem;
+      overflow-wrap: normal;
+
+      @include mobile-landscape {
+        font-size: 1rem;
+      }
+    }
+  }
+}

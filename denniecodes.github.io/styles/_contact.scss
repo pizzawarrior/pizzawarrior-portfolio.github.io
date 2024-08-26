@@ -1,0 +1,133 @@
+@import "./mixins";
+@import "./theme";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @include tablet-landscape {
+    align-items: center;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  h2 {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &-info {
+    @include tablet-landscape {
+      max-width: 80%;
+      // margin: 0 auto;
+    }
+
+    @include desktop {
+      max-width: 40%;
+    }
+
+    p {
+      max-width: 65ch;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+
+      @include tablet-portrait {
+        font-size: 1rem;
+      }
+
+      @include desktop {
+        margin-top: 0;
+        // font-size: 1rem;
+      }
+
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  /* Social Media and Professional Links Styling */
+  &-social {
+    margin: 0.5rem 0 1rem;
+
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+
+    li {
+      width: 1.5em;
+      margin: 0 0.25rem 0.5em;
+    }
+
+    &-icon {
+      width: 2rem;
+      // background-color: $bg-color--second;
+      // border-radius: 15px;
+    }
+  }
+}
+.contact-form {
+  background-color: $bg-color--second;
+  padding: 1.25rem;
+  font-size: 0.8rem;
+
+  @include tablet-landscape {
+    max-width: 75%;
+    // margin: 0 auto;
+  }
+
+  @include desktop-small {
+    padding: 2rem;
+    max-width: 60%;
+  }
+
+  @include desktop {
+    max-width: 45%;
+  }
+
+  input {
+    width: calc(100% - 8px);
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: $bg-color--second;
+    border: 1px solid $bg-color--main;
+    color: $text-color--contrast;
+    text-indent: 0.5rem;
+
+    @include mobile-landscape {
+      font-size: 1rem;
+    }
+  }
+
+  textarea {
+    width: calc(100% - 1.25rem);
+    height: 6rem;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem;
+
+    background-color: $bg-color--second;
+    border: 1px solid $bg-color--main;
+    color: $text-color--contrast;
+
+    @include mobile-landscape {
+      font-size: 1rem;
+    }
+  }
+
+  button {
+    padding: 0;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    color: $text-color--contrast;
+    opacity: 1;
+  }
+}

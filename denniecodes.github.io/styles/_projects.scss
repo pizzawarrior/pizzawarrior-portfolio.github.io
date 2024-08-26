@@ -1,0 +1,138 @@
+@import "./mixins";
+@import "./theme";
+
+/* Project-directory styling */
+.project-directory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+
+  @include tablet-landscape {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  @include desktop {
+    gap: 4rem;
+  }
+}
+
+/* Project (individual item) styling */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $bg-color--second;
+  border-radius: 5px;
+  width: 100%;
+
+  @include tablet-landscape {
+    max-width: 47%;
+  }
+
+  @include desktop-small {
+    max-width: 43%;
+    padding: 1rem;
+  }
+
+  @include desktop {
+    max-width: 34%;
+  }
+
+  @include desktop-wide {
+    max-width: 28%;
+  }
+
+  &-snapshot {
+    padding: 1rem;
+    object-fit: cover;
+    max-height: 18rem;
+    // border: 2px solid red;
+  }
+
+  &-info {
+    padding: 1rem;
+    color: $text-color--contrast;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    & h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin: 0 0 0.75rem;
+      color: $text-color--contrast;
+
+      @include mobile-landscape {
+        margin: 0 0 1.15rem;
+      }
+    }
+
+    & p {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+
+      @include mobile-landscape {
+        font-size: 1rem;
+      }
+    }
+
+    & a {
+      color: $color-orange;
+      text-decoration: underline;
+    }
+  }
+
+  &-tech {
+    margin: 1.75rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+
+    @include mobile-landscape {
+      margin: 2rem 0;
+    }
+
+    & li {
+      font-size: 0.8rem;
+      background-color: $color-blue;
+      color: $text-color--contrast;
+
+      padding: 0.5rem 1rem;
+      line-height: 1rem;
+      border-radius: 5px;
+
+      @include mobile-landscape {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
+
+  &-links {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+
+    @include mobile-landscape {
+      font-size: 1rem;
+    }
+
+    & a {
+      color: $color-green;
+      text-decoration: none;
+      border-bottom: 1px solid $color-green;
+    }
+  }
+}
