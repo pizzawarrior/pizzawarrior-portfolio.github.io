@@ -87,6 +87,7 @@
 	&-hero-image {
 		width: 100%;
 		object-fit: contain;
+		border-radius: 50%;
 
 		@include tablet-landscape {
 			width: 90%;

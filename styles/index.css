@@ -340,7 +340,7 @@ header nav img {
   margin-right: 1rem;
 }
 .landing-hero-image {
-  width: 100%;
+  width: 75%;
   object-fit: contain;
 }
 @media (min-width: 768px) {
@@ -351,12 +351,12 @@ header nav img {
 }
 @media (min-width: 1024px) {
   .landing-hero-image {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (min-width: 1440px) {
   .landing-hero-image {
-    width: 50%;
+    width: 40%;
   }
 }
 @media (min-width: 1920px) {
