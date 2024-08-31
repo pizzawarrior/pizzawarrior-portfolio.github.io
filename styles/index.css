@@ -594,11 +594,12 @@ header nav img {
   flex-basis: 6rem;
   text-align: center;
 }
-.skillset-card img {
+.skillset-card img, object {
   height: 5rem;
   width: 5rem;
   object-fit: contain;
 }
+
 .skillset-card .dark-bg {
   padding: 0.25rem;
   background-color: #404040;
