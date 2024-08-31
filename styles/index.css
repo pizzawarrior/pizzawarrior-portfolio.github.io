@@ -594,7 +594,7 @@ header nav img {
   flex-basis: 6rem;
   text-align: center;
 }
-.skillset-card img, object {
+.skillset-card img {
   height: 5rem;
   width: 5rem;
   object-fit: contain;
