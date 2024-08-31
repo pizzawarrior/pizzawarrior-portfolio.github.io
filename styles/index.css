@@ -94,15 +94,28 @@ a {
   height: 2.5rem;
   font-size: 1rem;
   border-radius: 5px;
-  background-color: #de6d1f;
+  background-color: #1161ed;
   color: #fff;
   cursor: pointer;
 }
 
 .button-secondary-cta {
   background-color: #fff;
-  border: 2px solid #de6d1f;
-  color: #de6d1f;
+  border: 2px solid #1161ed;
+  color: #1161ed;
+}
+
+.button-repo {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  line-height: 1rem;
+  border-radius: 15px;
+  background-color: #262626;
+  color: #7c7d7d;
+  cursor: pointer;
+  text-decoration: none;
+  border: solid 1px #f9f9f9;
+
 }
 
 header {
@@ -135,12 +148,15 @@ header .brand .logo {
   }
 }
 header .brand h1 {
+  font-family: "Roboto", sans-serif;
   margin-top: 0.25rem;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1rem;
 }
 header nav {
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   display: none;
   position: absolute;
   width: calc(100% + 1em);
@@ -203,12 +219,12 @@ header nav li {
   }
 }
 header nav li a {
-  color: #de6d1f;
-  font-weight: 500;
+  color: black;
+  /* font-weight: 500; */
   font-size: 1.25rem;
 }
 header nav li a:hover {
-  border-bottom: 3px solid #de6d1f;
+  border-bottom: 3px solid #1161ed;
 }
 header nav img {
   height: 25px;
@@ -451,7 +467,7 @@ header nav img {
   }
 }
 .project-info a {
-  color: #de6d1f;
+  color: #1161ed;
   text-decoration: underline;
 }
 .project-tech {
@@ -496,9 +512,8 @@ header nav img {
   }
 }
 .project-links a {
-  color: #1fde5d;
+  color: #b0b0b0;
   text-decoration: none;
-  border-bottom: 1px solid #1fde5d;
 }
 
 .skillset {
@@ -538,6 +553,8 @@ header nav img {
   }
 }
 .skillset-directory h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   width: 100%;
   font-size: 1.75rem;
   height: 2rem;
@@ -684,7 +701,7 @@ header nav img {
   margin-top: 1.5rem;
   font-size: 1rem;
   font-weight: 400;
-  color: #de6d1f;
+  color: #1161ed;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -712,7 +729,7 @@ header nav img {
   }
 }
 .developer-bio-text a {
-  color: #de6d1f;
+  color: #1161ed;
   text-decoration: underline;
 }
 
