@@ -1,5 +1,5 @@
 ## www.codebyian.com
-A simple portfolio for selected personal coding projects
+A simple portfolio for selected personal coding projects. This will be updated as new projects are completed.
 
 ### Tech Used:
 - HTML
@@ -12,5 +12,4 @@ A simple portfolio for selected personal coding projects
 - This project was developed in a mobile-first way, with the intention of being able to view it from a phone
 
 ***
-
-![Codebyian](https://github.com/user-attachments/assets/34b5f567-2449-421e-8e46-99df263ab02b)
+<img width="750" alt="Codebyian" src="https://github.com/user-attachments/assets/34b5f567-2449-421e-8e46-99df263ab02b">
