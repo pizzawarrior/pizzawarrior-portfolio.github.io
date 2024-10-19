@@ -11,4 +11,6 @@ A simple portfolio for selected personal coding projects
 - The submission form uses an endpoint provided by FormSubmit
 - This project was developed in a mobile-first way, with the intention of being able to view it from a phone
 
+***
 
+![Codebyian](https://github.com/user-attachments/assets/34b5f567-2449-421e-8e46-99df263ab02b)
